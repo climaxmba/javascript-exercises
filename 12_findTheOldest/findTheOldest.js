@@ -1,5 +1,5 @@
 const findTheOldest = function(obj) {
-    let currYear = Number(Date().slice(11, -46));
+    let currYear = Number(new Date().getFullYear());
     let oldest = 0;
 
     for (let i = 0; i < obj.length; i++) {
